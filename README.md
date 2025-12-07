@@ -5,6 +5,7 @@ The system leverages ensemble ML models, CNN-based image classification, and exp
 
 This project is implemented in Python and deployed through a Streamlit-based web interface, enabling real-time, user-friendly diagnosis assistance.
 ⭐ Key Features
+
 🔹 1. Tabular Clinical Data Prediction
 Uses XGBoost and Random Forest ensemble models
 Trained on Wisconsin Breast Cancer Dataset (WBCD)
@@ -12,20 +13,24 @@ Achieved 97.37% accuracy (XGBoost) and 96.49% (Random Forest)
 Integrated Explainability:
 SHAP → Global & local feature attribution
 LIME → Instance-level interpretability
+
 🔹 2. Mammogram Image Classification
 CNN model trained on MIAS mammography dataset
 Identifies benign vs. malignant masses
 GradCAM heatmaps highlight suspicious regions
 Achieved 94.12% accuracy
+
 🔹 3. Long-Term Risk Forecasting
 Predicts 1-year, 3-year, and 5-year survival probabilities
 Multi-modal fusion of tabular + imaging features
 Generates personalized risk curves for clinical insight
+
 🔹 4. Fully Explainable Clinical AI
 Our system integrates three layers of interpretability:
 SHAP – Most influential clinical features (e.g., concave points, area, perimeter)
 LIME – Per-patient sensitivity analysis
 GradCAM – Visual heatmaps over mammograms
+
 🔹 5. Web Deployment (Streamlit)
 The application offers:
 Image upload
@@ -33,8 +38,7 @@ Tabular input form
 Real-time model inference
 Visual explanations
 Risk forecasting dashboard
-Screenshots available in your report Appendix B 
-ML_Project ReportBreastCancer c…
+
 📊 Model Performance Summary
 Model	Accuracy	Precision	Recall	F1-score	AUC-ROC
 XGBoost	97.37%	97.56%	95.24%	96.39%	0.9951
@@ -66,15 +70,12 @@ Place downloaded models in:
 
 
 🔧 Tech Stack
-Python 3.11
-Scikit-learn, XGBoost, PyTorch / TensorFlow
-OpenCV, NumPy, Pandas
-SHAP, LIME, GradCAM
-Streamlit (UI)
-Matplotlib / Seaborn (visualizations)
-Referenced in implementation details from Chapter 6 of your report 
-ML_Project ReportBreastCancer c…
-
+1. Python 3.11
+2. Scikit-learn, XGBoost, PyTorch / TensorFlow , OpenCV, NumPy, Pandas
+3. SHAP, LIME, GradCAM
+4. Streamlit (UI)
+5. Matplotlib / Seaborn (visualizations)
+   
 
 ▶️ How to Run Locally
 1. Create Virtual Environment
@@ -89,17 +90,27 @@ streamlit run app/streamlit_app.py
 
 
 🎯 Project Highlights
-Multi-modal design mirrors real clinical workflows
-Transparent, reliable ML predictions
-Real-time diagnosis assistance
-Performance competitive with published research
-Bridges research → clinical usability gap
+1. Multi-modal design mirrors real clinical workflows
+2. Transparent, reliable ML predictions
+3. Real-time diagnosis assistance
+4. Performance competitive with published research
+5. Bridges research → clinical usability gap
+
+   
+<img width="400px" height="auto" alt="mammo prediction" src="https://github.com/user-attachments/assets/9c442748-f0fb-478f-b340-ef5b9f90d87a" />
+
+
+<img width="400px" height="auto" alt="image" src="https://github.com/user-attachments/assets/c53dadc8-1c76-491d-840f-6ce83ecc908f" />
+
+
+<img width="400px" height="auto" alt="image" src="https://github.com/user-attachments/assets/80a74530-397f-444b-a38c-f7a8e57ec1bc" />
+
+   
 
 
 🔮 Future Enhancements
-Support for DICOM mammograms
-Multi-center dataset validation
-Integration with hospital EHR systems
-Uncertainty estimation
-Federated learning
-Multi-class cancer subtype prediction
+1. Support for DICOM mammograms
+2. Multi-center dataset validation
+3. Integration with hospital EHR systems
+4. Uncertainty estimation
+
