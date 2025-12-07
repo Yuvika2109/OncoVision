@@ -4,6 +4,7 @@ OncoVision is an integrated breast cancer prediction framework that combines cli
 The system leverages ensemble ML models, CNN-based image classification, and explainable AI tools (SHAP, LIME, GradCAM) to deliver transparent, accurate, and clinically meaningful predictions.
 
 This project is implemented in Python and deployed through a Streamlit-based web interface, enabling real-time, user-friendly diagnosis assistance.
+
 ⭐ Key Features
 
 🔹 1. Tabular Clinical Data Prediction
@@ -105,7 +106,8 @@ streamlit run app/streamlit_app.py
 
 <img width="400px" height="auto" alt="image" src="https://github.com/user-attachments/assets/80a74530-397f-444b-a38c-f7a8e57ec1bc" />
 
-   
+<img width="400px" height="auto" alt="image" src="https://github.com/user-attachments/assets/7a3a70ff-0916-4ebd-81e9-2f0b5a6533c2" />
+
 
 
 🔮 Future Enhancements
